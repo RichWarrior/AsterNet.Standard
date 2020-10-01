@@ -1,4 +1,5 @@
-﻿using RestSharp.Portable;
+using RestSharp;
+using RestSharp.Portable;
 using RestSharp.Portable.Authenticators;
 using RestSharp.Portable.HttpClient;
 using System;
@@ -17,7 +18,7 @@ namespace AsterNet.Standard.Middleware.Default
                 Authenticator = new HttpBasicAuthenticator(info.Username, info.Password)
             };
 
-            Request = new RestRequest(path) { Serializer = new RestSharp.Portable.Serializers.JsonSerializer() };
+            Request = new RestRequest(path) {Serializer = new RestSharp.Portable.Serializers.JsonSerializer()};
         }
 
 
@@ -27,7 +28,7 @@ namespace AsterNet.Standard.Middleware.Default
         public string Method
         {
             get { return Request.Method.ToString(); }
-            set { Request.Method = (RestSharp.Portable.Method)Enum.Parse(typeof(RestSharp.Portable.Method), value); }
+            set { Request.Method = (RestSharp.Portable.Method) Enum.Parse(typeof (RestSharp.Portable.Method), value); }
         }
 
 
@@ -43,5 +44,4 @@ namespace AsterNet.Standard.Middleware.Default
             Request.AddParameter(name, value, (RestSharp.Portable.ParameterType)Enum.Parse(typeof(RestSharp.Portable.ParameterType), type.ToString()));
         }
     }
-
 }

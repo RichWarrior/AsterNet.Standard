@@ -1,6 +1,6 @@
-﻿using SuperSocket.ClientEngine;
-using System;
+﻿using System;
 using System.Net.Sockets;
+using SuperSocket.ClientEngine;
 using WebSocket4Net;
 
 namespace AsterNet.Standard.Middleware.Default
@@ -29,7 +29,7 @@ namespace AsterNet.Standard.Middleware.Default
 
         public ConnectionState State
         {
-            get { return _client == null ? ConnectionState.None : (ConnectionState)_client.State; }
+            get { return _client == null? ConnectionState.None : (ConnectionState)_client.State; }
         }
 
         #endregion

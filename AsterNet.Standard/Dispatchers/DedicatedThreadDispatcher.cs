@@ -1,9 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Concurrent;
 using System.Threading;
 
 namespace AsterNet.Standard.Dispatchers
 {
+    // This dispatcher uses a dedicated thread to dispatch ARI events, so that their order is preserved and
+    // the event handlers are not called from different threads at the same time.
+
     sealed class DedicatedThreadDispatcher : IAriDispatcher
     {
         readonly BlockingCollection<Action> _eventQueue = new BlockingCollection<Action>();
@@ -49,8 +52,7 @@ namespace AsterNet.Standard.Dispatchers
                 }
             }
             catch (OperationCanceledException)
-            { }
+            {}
         }
     }
-
 }

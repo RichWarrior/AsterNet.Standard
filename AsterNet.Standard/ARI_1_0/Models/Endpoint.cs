@@ -1,6 +1,12 @@
-﻿using System.Collections.Generic;
+﻿/*
+	AsterNET ARI Framework
+	Automatically generated file @ 9/22/2016 4:43:50 PM
+*/
+using System;
+using System.Collections.Generic;
+using AsterNet.Standard.Actions;
 
-namespace AsterNet.Standard.ARI_1_0.Models
+namespace AsterNet.Standard.Models
 {
     /// <summary>
     /// An external device that may offer/accept calls to/from Asterisk.  Unlike most resources, which have a single unique identifier, an endpoint is uniquely identified by the technology/resource pair.

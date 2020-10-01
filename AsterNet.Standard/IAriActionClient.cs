@@ -1,4 +1,4 @@
-﻿using AsterNet.Standard.ARI_1_0.Actions;
+﻿using AsterNet.Standard.Actions;
 
 namespace AsterNet.Standard
 {

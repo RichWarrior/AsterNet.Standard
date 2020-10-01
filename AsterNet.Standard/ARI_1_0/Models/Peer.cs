@@ -1,4 +1,9 @@
-﻿namespace AsterNet.Standard.ARI_1_0.Models
+﻿/*
+	AsterNET ARI Framework
+	Automatically generated file @ 9/22/2016 4:43:49 PM
+*/
+
+namespace AsterNet.Standard.Models
 {
     /// <summary>
     /// Detailed information about a remote peer that communicates with Asterisk.

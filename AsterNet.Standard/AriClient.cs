@@ -1,9 +1,8 @@
-﻿using AsterNet.Standard.ARI_1_0;
-using AsterNet.Standard.ARI_1_0.Actions;
-using AsterNet.Standard.ARI_1_0.Models;
+﻿using AsterNet.Standard.Actions;
 using AsterNet.Standard.Dispatchers;
 using AsterNet.Standard.Middleware;
 using AsterNet.Standard.Middleware.Default;
+using AsterNet.Standard.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -150,7 +149,7 @@ namespace AsterNet.Standard
             // load the message
             var jsonMsg = (JObject)JToken.Parse(e.Message);
             var eventName = jsonMsg.SelectToken("type").Value<string>();
-            var type = Type.GetType("asterisk.ssso.ari.client.Models." + eventName + "Event");
+            var type = Type.GetType("AsterNet.Standard.Models." + eventName + "Event");
             var evnt =
                 (type != null)
                     ? (Event)JsonConvert.DeserializeObject(e.Message, type)
@@ -167,7 +166,7 @@ namespace AsterNet.Standard
                     {
                         FireEvent(evnt.Type, evnt, this);
                     }
-                    catch (Exception ex)
+                    catch(Exception ex)
                     {
                         // Handle any exceptions that were thrown by the invoked event handler
                         if (!UnhandledException(this, ex))

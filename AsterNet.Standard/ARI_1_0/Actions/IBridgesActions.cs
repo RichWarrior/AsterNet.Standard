@@ -1,9 +1,16 @@
-﻿using AsterNet.Standard.ARI_1_0.Models;
+﻿/*
+	AsterNET ARI Framework
+	Automatically generated file @ 9/22/2016 4:43:49 PM
+*/
+using System;
 using System.Collections.Generic;
+using AsterNet.Standard.Models;
+using AsterNet.Standard;
 using System.Threading.Tasks;
 
-namespace AsterNet.Standard.ARI_1_0.Actions
+namespace AsterNet.Standard.Actions
 {
+
     public interface IBridgesActions
     {
         /// <summary>
@@ -176,5 +183,4 @@ namespace AsterNet.Standard.ARI_1_0.Actions
         /// <param name="terminateOn">DTMF input to terminate recording.</param>
         Task<LiveRecording> RecordAsync(string bridgeId, string name, string format, int? maxDurationSeconds = null, int? maxSilenceSeconds = null, string ifExists = null, bool? beep = null, string terminateOn = null);
     }
-
 }

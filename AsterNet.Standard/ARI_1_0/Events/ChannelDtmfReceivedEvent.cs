@@ -1,6 +1,12 @@
-﻿using AsterNet.Standard.ARI_1_0.Models;
+﻿/*
+	AsterNET ARI Framework
+	Automatically generated file @ 9/22/2016 4:43:49 PM
+*/
+using System;
+using System.Collections.Generic;
+using AsterNet.Standard.Actions;
 
-namespace AsterNet.Standard.ARI_1_0.Events
+namespace AsterNet.Standard.Models
 {
     /// <summary>
     /// DTMF received on a channel.  This event is sent when the DTMF ends. There is no notification about the start of DTMF

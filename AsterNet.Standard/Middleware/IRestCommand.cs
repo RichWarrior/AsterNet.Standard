@@ -1,5 +1,6 @@
 ﻿namespace AsterNet.Standard.Middleware
 {
+
     public enum ParameterType
     {
         Cookie,

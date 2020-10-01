@@ -2,6 +2,7 @@
 
 namespace AsterNet.Standard.Middleware
 {
+
     public enum HttpMethod
     {
         GET,

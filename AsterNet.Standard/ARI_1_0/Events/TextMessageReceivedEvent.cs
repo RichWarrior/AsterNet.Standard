@@ -1,9 +1,12 @@
-﻿using AsterNet.Standard.ARI_1_0.Models;
+﻿/*
+	AsterNET ARI Framework
+	Automatically generated file @ 9/22/2016 4:43:49 PM
+*/
 using System;
 using System.Collections.Generic;
-using System.Text;
+using AsterNet.Standard.Actions;
 
-namespace AsterNet.Standard.ARI_1_0.Events
+namespace AsterNet.Standard.Models
 {
     /// <summary>
     /// A text message was received from an endpoint.

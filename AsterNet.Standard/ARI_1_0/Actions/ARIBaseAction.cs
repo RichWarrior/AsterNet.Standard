@@ -1,7 +1,7 @@
 ﻿using AsterNet.Standard.Middleware;
 using System.Threading.Tasks;
 
-namespace AsterNet.Standard.ARI_1_0.Actions
+namespace AsterNet.Standard
 {
     public class ARIBaseAction
 	{
@@ -30,15 +30,14 @@ namespace AsterNet.Standard.ARI_1_0.Actions
 			return _consumer.ProcessRestCommand(command);
 		}
 
-		protected async Task<IRestCommandResult<T>> ExecuteTask<T>(IRestCommand command) where T : new()
-		{
-			return await _consumer.ProcessRestTaskCommand<T>(command);
-		}
+        protected  async Task<IRestCommandResult<T>> ExecuteTask<T>(IRestCommand command) where T : new()
+        {
+            return await _consumer.ProcessRestTaskCommand<T>(command);
+        }
 
-		protected async Task<IRestCommandResult> ExecuteTask(IRestCommand command)
-		{
-			return await _consumer.ProcessRestTaskCommand(command);
-		}
+        protected async Task<IRestCommandResult> ExecuteTask(IRestCommand command)
+        {
+            return await _consumer.ProcessRestTaskCommand(command);
+        }
 	}
-
 }

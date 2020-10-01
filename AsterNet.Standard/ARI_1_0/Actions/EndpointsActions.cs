@@ -1,10 +1,17 @@
-﻿using AsterNet.Standard.ARI_1_0.Models;
-using AsterNet.Standard.Middleware;
+﻿/*
+	AsterNET ARI Framework
+	Automatically generated file @ 9/22/2016 4:43:50 PM
+*/
 using System.Collections.Generic;
+using System.Linq;
+using AsterNet.Standard.Middleware;
+using AsterNet.Standard.Models;
+using Newtonsoft.Json;
 using System.Threading.Tasks;
 
-namespace AsterNet.Standard.ARI_1_0.Actions
+namespace AsterNet.Standard.Actions
 {
+
     public class EndpointsActions : ARIBaseAction, IEndpointsActions
     {
 
@@ -290,5 +297,5 @@ namespace AsterNet.Standard.ARI_1_0.Actions
             }
         }
     }
-
 }
+

@@ -1,9 +1,16 @@
-﻿using AsterNet.Standard.ARI_1_0.Models;
+﻿/*
+	AsterNET ARI Framework
+	Automatically generated file @ 9/22/2016 4:43:49 PM
+*/
+using System;
 using System.Collections.Generic;
+using AsterNet.Standard.Models;
+using AsterNet.Standard;
 using System.Threading.Tasks;
 
-namespace AsterNet.Standard.ARI_1_0.Actions
+namespace AsterNet.Standard.Actions
 {
+
     public interface IEventsActions
     {
         /// <summary>
@@ -36,5 +43,4 @@ namespace AsterNet.Standard.ARI_1_0.Actions
         /// <param name="variables">The "variables" key in the body object holds custom key/value pairs to add to the user event. Ex. { "variables": { "key": "value" } }</param>
         Task UserEventAsync(string eventName, string application, string source = null, Dictionary<string, string> variables = null);
     }
-
 }

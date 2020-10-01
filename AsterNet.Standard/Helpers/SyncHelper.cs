@@ -1,7 +1,5 @@
-﻿using AsterNet.Standard.ARI_1_0;
-using AsterNet.Standard.ARI_1_0.Events;
-using AsterNet.Standard.ARI_1_0.Models;
-using System.Threading;
+﻿using System.Threading;
+using AsterNet.Standard.Models;
 
 namespace AsterNet.Standard.Helpers
 {

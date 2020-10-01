@@ -1,9 +1,16 @@
-﻿using AsterNet.Standard.ARI_1_0.Models;
+﻿/*
+	AsterNET ARI Framework
+	Automatically generated file @ 9/22/2016 4:43:50 PM
+*/
+using System;
 using System.Collections.Generic;
+using AsterNet.Standard.Models;
+using AsterNet.Standard;
 using System.Threading.Tasks;
 
-namespace AsterNet.Standard.ARI_1_0.Actions
+namespace AsterNet.Standard.Actions
 {
+
     public interface IEndpointsActions
     {
         /// <summary>
@@ -68,5 +75,4 @@ namespace AsterNet.Standard.ARI_1_0.Actions
         /// <param name="body">The body of the message</param>
         Task SendMessageToEndpointAsync(string tech, string resource, string from, string body = null, Dictionary<string, string> variables = null);
     }
-
 }

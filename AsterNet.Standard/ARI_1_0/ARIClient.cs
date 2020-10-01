@@ -1,8 +1,12 @@
-﻿using AsterNet.Standard.ARI_1_0.Events;
-using AsterNet.Standard.ARI_1_0.Models;
+﻿/*
+	AsterNET ARI Framework
+	Automatically generated file @ 9/22/2016 4:43:50 PM
+*/
 using System;
+using System.Collections.Generic;
+using AsterNet.Standard.Models;
 
-namespace AsterNet.Standard.ARI_1_0
+namespace AsterNet.Standard
 {
     public delegate void DeviceStateChangedEventHandler(IAriClient sender, DeviceStateChangedEvent e);
     public delegate void PlaybackStartedEventHandler(IAriClient sender, PlaybackStartedEvent e);
@@ -40,7 +44,7 @@ namespace AsterNet.Standard.ARI_1_0
     public delegate void StasisStartEventHandler(IAriClient sender, StasisStartEvent e);
     public delegate void TextMessageReceivedEventHandler(IAriClient sender, TextMessageReceivedEvent e);
     public delegate void ChannelConnectedLineEventHandler(IAriClient sender, ChannelConnectedLineEvent e);
-    public delegate void UnhandledEventHandler(object sender, Event eventMessage);
+    public delegate void UnhandledEventHandler(object sender, AsterNet.Standard.Models.Event eventMessage);
     public delegate void UnhandledExceptionEventHandler(object sender, Exception exception);
 
     public interface IAriEventClient

@@ -26,14 +26,10 @@
 
         public string AriEndPoint
         {
-            get
-            {
-                if (Ssl)
-                {
+            get {
+                if (Ssl) {
                     return string.Format("{0}://{1}:{2}/ari", "https", Host, Port);
-                }
-                else
-                {
+                } else {
                     return string.Format("{0}://{1}:{2}/ari", "http", Host, Port);
                 }
             }

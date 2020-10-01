@@ -1,11 +1,15 @@
-﻿using AsterNet.Standard.ARI_1_0.Models;
+﻿/*
+	AsterNET ARI Framework
+	Automatically generated file @ 9/22/2016 4:43:49 PM
+*/
 using AsterNet.Standard.Middleware;
-using AsterNet.Standard.Middleware.Default;
+using AsterNet.Standard.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace AsterNet.Standard.ARI_1_0.Actions
+namespace AsterNet.Standard.Actions
 {
+
     public class ChannelsActions : ARIBaseAction, IChannelsActions
     {
 
@@ -1832,5 +1836,5 @@ namespace AsterNet.Standard.ARI_1_0.Actions
             }
         }
     }
-
 }
+

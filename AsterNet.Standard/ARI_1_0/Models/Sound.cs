@@ -1,6 +1,12 @@
-﻿using System.Collections.Generic;
+﻿/*
+	AsterNET ARI Framework
+	Automatically generated file @ 9/22/2016 4:43:50 PM
+*/
+using System;
+using System.Collections.Generic;
+using AsterNet.Standard.Actions;
 
-namespace AsterNet.Standard.ARI_1_0.Models
+namespace AsterNet.Standard.Models
 {
     /// <summary>
     /// A media file that may be played back.
